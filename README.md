@@ -12,4 +12,4 @@ a camera to detect vehicles and their locations to determine where to lighten/da
 
 #### [**Video demo**](https://youtu.be/6VwgZgbertE) (Click to see the full video)
 
-![Giphy Image](https://giphy.com/embed/jyINc5WNGIIgzBQRW3.gif)
+![Giphy Image](https://giphy.com/gifs/jyINc5WNGIIgzBQRW3.gif)
