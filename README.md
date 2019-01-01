@@ -20,6 +20,6 @@ a camera to detect vehicles and their locations to determine where to lighten/da
 
 To get this project up and running on your local machine, download both LEDController and Python folders. 
 * [LEDController](LEDController) folder includes the file for an Arduino microcontroller and is responsible for controlling the LED matrix module based on the input from vehicle detection part (Python).
-* [Python](Python) folder includes the Python script for vehicle detection, an inference graph for our trained model and a label_map.pbtxt file to map our labels.
+* [Python](Python) folder includes the Python script vehicleDetect.py for vehicle detection, an inference graph for the pretrained model and a label_map.pbtxt file to map the labels.
 
 Once you're done downloading the folders, the software part of this project would be complete.
