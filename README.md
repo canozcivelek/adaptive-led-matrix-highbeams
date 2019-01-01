@@ -1,6 +1,6 @@
 # Adaptive LED Matrix High Beams
 
-### Project Description & Objective
+## Project Description & Objective
 
 This project was created to demonstrate a more sophisticated approach to modern/standard headlight technology used in present cars on road.
 In addition to having the mandatory low and high beams, this project aims to demonstrate how LED technology can be used to create a more
@@ -10,6 +10,7 @@ This is made possible in this project with 2 sub-systems in communication.
 First is the module to control the hardware (LED matrix), second is 
 a camera to detect vehicles and their locations to determine where to lighten/darken.
 
-#### [**Video demo**](https://youtu.be/6VwgZgbertE) (Click to see the full video)
+#### [**Demo Video**](https://youtu.be/6VwgZgbertE) (Click to see the full video)
 
 ![](https://imgur.com/a9QZYnO.gif)
+
