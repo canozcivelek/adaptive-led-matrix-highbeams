@@ -9,3 +9,7 @@ road as possible while not dazzling other drivers for both oncoming and precedin
 This is made possible in this project with 2 sub-systems in communication. 
 First is the module to control the hardware (LED matrix), second is 
 a camera to detect vehicles and their locations to determine where to lighten/darken.
+
+#### [**Video demo**](https://youtu.be/6VwgZgbertE) (Click to see the full video)
+
+[![gif_demo][gif1]](https://youtu.be/fqQFVK4ZxoQ)
