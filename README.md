@@ -23,7 +23,7 @@ To get this project up and running on your local machine, first, download both L
 * [Python](Python) folder includes the Python script vehicleDetect.py for vehicle detection, an inference graph for the pretrained model and a label_map.pbtxt file to map the labels.
 
 Once you're done downloading the folders, the software part of this project would be complete. 
-Hardware components used in this project is an Arduino UNO microcontroller, LED matrix (CJMCU 64 Bit WS2812 5050 RGB LED Driver Development Board), a headlight projector lens, cables and a USB webcam. See Deployment for notes on how to deploy the project in detail.
+Hardware components used in this project is an Arduino UNO microcontroller, LED matrix (CJMCU 64 Bit WS2812 5050 RGB LED Driver Development Board), a headlight projector lens, cables and a USB webcam. See Deployment for notes on how to deploy the project in more detail.
 
 #### Prerequisites
 To successfully run the project, it is required to have the following software and their respective versions downloaded:
@@ -32,7 +32,39 @@ To successfully run the project, it is required to have the following software a
 * Tensorflow Object Detection API included in their models repository (https://github.com/tensorflow/models)
 * Microsoft Visual Studio (https://visualstudio.microsoft.com/free-developer-offers/)
 
-#### Other Dependencies and Environment
+#### Dependencies and Environment
 It should be noted that this project was developed on a Microsoft Windows 10 (64 Bit) machine, however, it should work on other platforms too with minor tweaks here and there. As for Python packages, OpenCV 3, Tensorflow 1.10.0, Numpy 1.14.5, PyAutoGUI 0.9, Serial 0.0.70, Utils 0.9.0 should be installed via pip3 or any other preferred way.
+
+## How the Code Works
+A webcam feed is provided to the Python script (vehicleDetect.py) where it analyzes the road and the pretrained model recognizes vehicles (basically headlights or taillights) and wraps them around with a bounding box. The x coordinates of detected vehicles are stored in variables called medX1 (first detected vehicle) and medX2 (second detected vehicle) the name of these variables come from the medium of the first and third indices of object called "boxes" which are xmin & xmax. To make the model recognize vehicles at night, over 500 images of traffic at night was used to train the model using ssd_inception_v2_coco model provided by Tensorflow. After storing the positions of detected vehicles, there is four possible conditions to be handled: if only 1 vehicle is detected, if only 2 vehicles are detected, if more than 2 vehicles are detected and if no vehicles are detected. Based on these conditions, a specific variable is constructed called posX. As mentioned before, the system can handle a maximum of 2 vehicles simultaneously. That is why the posX variable has a length of 3 characters, first of which is constant 'x', second of which is 'y' if single vehicle detected, or a position from 0-8 if a second vehicle is also detected, and the third always holds the position of the single/first vehicle detected. After the final value of posX is constructed, it is then written onto the serial object called 'ser' to be sent over the serial port (in this case COM3) and to be received by Arduino microcontroller and actuate the LEDs individually. The LED module consists of 64 individual LED chips but only 32 of them are reserved for the "high beam", whereas the remaining 32 can be considered as the low beams which are always turned ON. So we are dealing with 32 LED chips in 4 rows and 8 columns. To provide a glare-free driving experience for other drivers, the 32 LEDs are divided into 8 columns all of which can be individually turned ON/OFF. Having received the positions of detected vehicles, the aforementioned columns are turned ON/OFF following the logic that was defined in the beginning of LEDController.ino file. The area of detected 1 or 2 vehicles are dynamically kept dark, the remaining areas are kept illuminated by the high beams thus enhancing safety by increasing visibility. If more than 2 vehicles are detected, high beams are turned OFF altogether as the existing 8 columns would be divided too much and the efficiency of illumination is lost. The object detection is capable of recognizing both oncoming and preceding vehicles and works with different types of vehicles (cars, trucks, buses etc.)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
