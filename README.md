@@ -21,6 +21,7 @@ a camera feed with a trained object detection model to detect vehicles and their
 To get this project up and running on your local machine, first, download both LEDController and Python folders. 
 * [LEDController](LEDController) folder includes the file for an Arduino microcontroller and is responsible for controlling the LED matrix module based on the input from vehicle detection part (Python).
 * [Python](Python) folder includes the Python script vehicleDetect.py for vehicle detection, an inference graph for the pretrained model and a label_map.pbtxt file to map the labels.
+#
 Once you're done downloading the folders, the software part of this project would be complete. 
 Hardware components used in this project is an Arduino UNO microcontroller, LED matrix (CJMCU 64 Bit WS2812 5050 RGB LED Driver Development Board), a headlight projector lens, cables and a USB webcam. See Deployment for notes on how to deploy the project in detail.
 
