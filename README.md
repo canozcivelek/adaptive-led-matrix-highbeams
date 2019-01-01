@@ -25,8 +25,13 @@ To get this project up and running on your local machine, first, download both L
 Once you're done downloading the folders, the software part of this project would be complete. See Deployment for notes on how to deploy the project in detail.
 
 #### Prerequisites
-To successfully run the project, it is required to have the following software and their respective versions:
+To successfully run the project, it is required to have the following software and their respective versions downloaded:
 * Arduino IDE (https://www.arduino.cc/en/main/software)
 * Python 3.6 or higher (https://www.python.org/downloads/)
 * Tensorflow Object Detection API included in their models repository (https://github.com/tensorflow/models)
 * Microsoft Visual Studio (https://visualstudio.microsoft.com/free-developer-offers/)
+
+#### Other Dependencies and Environment
+It should be noted that this project was developed on a Microsoft Windows 10 (64 Bit) machine, however, it should work on other platforms too with minor tweaks here and there. As for Python packages, OpenCV 3, Tensorflow 1.10.0, numpy 1.14.5, PyAutoGUI 0.9, serial 0.0.70, utils 0.9.0 should be installed via pip3 or any other preferred way.
+
+
