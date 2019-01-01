@@ -9,7 +9,7 @@ This is made possible in this project with 2 sub-systems in communication.
 First is the module to control the hardware (LED matrix), second is 
 a camera feed with a trained object detection model to detect vehicles, locate them and determine where to lighten/darken.
 
-#### [**Demo Video**](https://youtu.be/6VwgZgbertE) (Click to see the full video)
+#### [**Demo Video**](https://youtu.be/6VwgZgbertE){:target="_blank"} (Click to see the full video)
 
 ![](https://imgur.com/a9QZYnO.gif)
 
