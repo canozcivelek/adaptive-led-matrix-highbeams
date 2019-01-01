@@ -7,7 +7,7 @@ In addition to having mandatory low and high beams, this project aims to demonst
 road as possible while not dazzling other drivers for both oncoming and preceding traffic.
 This is made possible in this project with 2 sub-systems in communication. 
 First is the module to control the hardware (LED matrix), second is 
-a camera feed with a trained object detection model to detect vehicles and their locations and determine where to lighten/darken.
+a camera feed with a trained object detection model to detect vehicles, locate them and determine where to lighten/darken.
 
 #### [**Demo Video**](https://youtu.be/6VwgZgbertE) (Click to see the full video)
 
