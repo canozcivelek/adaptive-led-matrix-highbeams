@@ -14,3 +14,8 @@ a camera to detect vehicles and their locations to determine where to lighten/da
 
 ![](https://imgur.com/a9QZYnO.gif)
 
+---
+
+## Get This Project Up and Running
+
+#### To get this project up and running on your local machine, 
