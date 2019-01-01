@@ -65,8 +65,6 @@ It should be noted that this project is only a demonstration of how I think this
 During the making of this project, a notable mention would include:
 * Chris Dahms - https://github.com/MicrocontrollersAndMore for their tutorials on how to use Tensorflow's object detection API.
 
-## License
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
 
 
 
