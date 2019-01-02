@@ -71,7 +71,7 @@ When the script is run, the LED matrix module will light up with a subtle animat
 ![](https://i.imgur.com/4JZg8ge.gif)
 
 ## Important Notes
-It should be noted that this project is only a demonstration of how I think this technology works. It cannot by any means be used in production vehicles or other than educational purposes. The capabilities of this system is limited to my setup as of developing this project and was created with the sole purpose of self-improvement, educational applications and is a result of my personal interest in automotive technology, lighting technology as well as computer vision applications.
+It should be noted that this project is only a demonstration of how I think this technology works. It cannot by any means be used in production vehicles or other than educational purposes. The capabilities of this system is limited to my setup as of developing this project and was created with the sole purpose of self-improvement, educational applications and is a result of my personal interest in automotive technology, lighting technology as well as computer vision applications. Actual technology used in production vehicles makes use of much higher end hardware (i.e. ECU, camera) and is part of safety systems that must work with extremely low rates of error and with high precision.
 
 ## Acknowledgments
 During the making of this project, a notable mention would include:
