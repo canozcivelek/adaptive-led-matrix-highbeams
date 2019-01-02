@@ -60,7 +60,7 @@ The Python script checks if the serial connection is established and will give a
 
 When the script is run, the LED matrix module will light up with a subtle animation and a window will be opened showing the webcam feed. Once it recognizes vehicles, it will show them wrapped around a bounding box, showing its label as "Vehicle" and how confident it is with a percentage that it belongs to an actual vehicle. The LED module will start to lighten/darken specific columns as if it keeps the area of the detected vehicle dark.
 
-#### Here is how my setup looks like (excluding the webcam)
+#### Here is how my setup looks like (excluding the camera)
 ![](https://i.imgur.com/4JZg8ge.gif)
 
 ## Important Notes
