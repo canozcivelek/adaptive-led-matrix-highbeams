@@ -44,8 +44,12 @@ A webcam feed is provided to the Python script (vehicleDetect.py) where it analy
 ```
 Based on these conditions, a specific variable is constructed called posX. As mentioned before, the system can handle a maximum of 2 vehicles simultaneously. That is why the posX variable has a length of 3 characters, first of which is constant 'x', second of which is 'y' if single vehicle detected, or a position from 0-8 if a second vehicle is also detected, and the third always holds the position of the single/first vehicle detected. After the final value of posX is constructed, it is then written onto the serial object called 'ser' to be sent over serial port (in this case COM3) and to be received by Arduino microcontroller to actuate LEDs individually. The LED module consists of 64 individual LED chips but for this project, only 32 of them are reserved for the "high beams", whereas the remaining 32 can be considered as low beams which are always turned ON. So we are dealing with 32 LED chips in 4 rows and 8 columns. To provide a glare-free environment for other drivers, the 32 LEDs are divided into 8 columns all of which can be individually turned ON/OFF. Having received (LEDController.ino) the positions of detected vehicles, aforementioned columns are turned ON/OFF following the logic that was defined in the beginning of LEDController.ino file. The area of detected vehicles are dynamically kept dark, while remaining areas are kept illuminated by the high beams, thus enhancing safety by increasing visibility. If more than 2 vehicles are detected, high beams are turned OFF altogether as the existing 8 columns would be divided too much to the point where the efficiency of illumination would be lost. The object detection model is capable of recognizing both oncoming and preceding vehicles and works with different types of vehicles (cars, trucks, buses etc.) To make the code understandable, comments are added where necessary.
 
+---
+
 #### A simple animation to show how this system works
 ![](https://imgur.com/Dy1nyaF.gif)
+
+---
 
 ## Deployment
 Following steps will walk you through how this project can be installed and get to work properly.
@@ -69,6 +73,8 @@ When the script is run, the LED matrix module will light up with a subtle animat
 
 #### Here is how my setup looks like (excluding the camera)
 ![](https://i.imgur.com/4JZg8ge.gif)
+
+---
 
 ## Important Notes
 It should be noted that this project is only a demonstration of how I think this technology works. It cannot by any means be used in production vehicles or other than educational purposes. The capabilities of this system is limited to my setup as of developing this project and was created with the sole purpose of self-improvement, educational applications and is a result of my personal interest in automotive technology, lighting technology as well as computer vision applications. Actual technology used in production vehicles makes use of much higher end hardware (i.e. ECU, camera) and is part of safety systems that must work with extremely low rates of error and with high precision.
