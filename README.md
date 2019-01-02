@@ -61,7 +61,7 @@ The Python script checks if the serial connection is established and will give a
 When the script is run, the LED matrix module will light up with a subtle animation and a window will be opened showing the webcam feed. Once it recognizes vehicles, it will show them wrapped around a bounding box, showing its label as "Vehicle" and how confident it is with a percentage that it belongs to an actual vehicle. The LED module will start to lighten/darken specific columns as if it keeps the area of the detected vehicle dark.
 
 #### Here is how my setup looks like (excluding the webcam)
-![](https://imgur.com/YMrrk32.gif)
+![](https://i.imgur.com/YMrrk32.mp4)
 
 ## Important Notes
 It should be noted that this project is only a demonstration of how I think this technology works. It cannot by any means be used in production vehicles or other than educational purposes. The capabilities of this system is limited to my setup as of developing this project and was created with the sole purpose of self-improvement, educational applications and is a result of my personal interest in automotive industry, lighting technology as well as computer vision applications.
