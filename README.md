@@ -3,7 +3,7 @@
 ## Project Description & Objective
 
 This project was created to demonstrate a more sophisticated approach to modern/standard headlight technology used in present cars.
-In addition to having mandatory low and high beams, this project aims to demonstrate how the flexibility of LEDs can be used to create safer driving conditions under low light/dark. The main objective of this technology is to illuminate as much of the 
+In addition to having mandatory low and high beams, this project aims to demonstrate how the flexibility of LEDs can be used to create safer driving environment under low light/dark conditions. The main objective of this technology is to illuminate as much of the 
 road as possible while not dazzling other drivers for both oncoming and preceding traffic.
 This is made possible in this project with 2 sub-systems in communication. 
 First is the module to control the hardware (LED matrix), second is 
