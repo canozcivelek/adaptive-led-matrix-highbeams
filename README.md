@@ -84,6 +84,7 @@ It should be noted that this project is **only** a demonstration of how *I think
 ## Acknowledgments
 During the making of this project, a notable mention should be made to:
 * Chris Dahms - https://github.com/MicrocontrollersAndMore for their tutorials on how to use Tensorflow's object detection API.
+* darrenl - https://github.com/tzutalin/labelImg for their great work creating this useful tool.
 
 
 
